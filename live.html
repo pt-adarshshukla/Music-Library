@@ -1,0 +1,1716 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="css/livestyle.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/livestyle1.css"
+    />
+    <!-- IMPORT CSS MAIN -->
+<link rel="stylesheet" type="text/css" href="css/livestyle.css">
+<link rel="stylesheet" type="text/css" href="css/livestyle1.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<link rel="stylesheet" type="text/css" href="fonts/css/fontawesome.min.css">
+<link rel="stylesheet" type="text/css" href="fonts/css/all.min.css">
+    <link rel="shortcut icon" href="images/logo/SVG/Audiospark_Logo_Icon.svg" type="image/x-icon" />
+    
+    <title>MUSIC LIBRARY</title>
+
+    <script src="js/app.js"></script>
+<script src="js/aplayer1.js"></script>
+<script src="js/aplayer2.js"></script>
+<script src="js/aplayer3.js"></script>
+    <style>
+      /* Styles for your existing webpage */
+
+        body {
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            overflow: auto; /* Ensure scrolling is allowed */
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: auto; 
+        }
+        #audio-container audio {
+            display: none;
+        }
+  </style>
+  </head>
+  <body id="Top">
+        
+
+        
+  
+  <!-- Include your existing JavaScript scripts here -->
+  
+  
+
+  <!-- NAVBAR -->
+  <nav id="navbarFixed">
+            <ul>
+                <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Menu" aria-label="Menu" class="fa-bars-mobile"><span class="far fa-bars"></span></a>
+                <a href="index.html"><img src="images/logo/SVG/Audiospark_Logo_Icon.svg" alt="" title="MacroTune"></a>
+                <ul id="navbarMobileToggle">
+                    <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Close Menu" aria-label="Close Menu" class="fa-close-mobile"><span class="far fa-close"></span></a>
+                    
+                    <a href="index.html"><li>Home</li></a>
+                    <a href="live.html"><li>Songs</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    
+                    
+                </ul>
+            </ul>
+            <ul>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnDark" title="Switch Dark Mode" aria-label="Switch Dark Mode"><span class="far fa-moon"></span></a>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnLight" title="Switch Light Mode" aria-label="Switch Light Mode"><span class="far fa-sun"></span></a>
+                <a href="javascript:void(0)" onclick="searchMode()" title="Search" aria-label="Search"><span class="far fa-search"></span></a>
+                
+
+                <!-- AVATAR DORPDOWN -->
+              
+            </ul>
+        </nav>
+
+  <!-- SEARCH MODE -->
+  <div class="overlay-search-mode" id="overlaySearchMode">
+      <div class="search-mode" id="searchMode">
+          <a href="javascript:void(0)" onclick="searchMode()"></a>
+          <!-- FORM: SEARCH -->
+          <form action="" method="post">
+              <span class="far fa-search"></span>
+              <input type="search" placeholder="Search" aria-placeholder="Search">
+          </form>
+      </div>
+  </div>
+
+  <!-- SUPPORT & CHAT MODE -->
+  <div class="overlay-support-chat-mode" id="supportChatMode">
+      <div class="support-chat-mode">
+          <!-- CHAT HEADER -->
+          <div class="support-chat-mode-header">
+              <h4>Support <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="" title="Audiospark Bot"></h4>
+              <a href="javascript:void(0)" onclick="supportChatMode()"><span class="far fa-close"></span></a>
+          </div>
+          <!-- CHAT BODY -->
+          <div class="support-chat-mode-body">
+              <div class="chat-date">2024</div>
+              <div class="section-message-bot">
+                  <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                  <p>Hello! How can I assist you today?</p>
+              </div>
+              <div class="section-message-user">
+                  <img src="images/avatar/avatar-1.png" alt="">
+                  <p>Hi</p>
+                  <p>How to download as music???</p>
+              </div>
+              <div class="section-message-bot">
+                  <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                  <p>You are not allowed to download Musics As per policy of MacroNet.
+                  <br><br>
+                  If you have a problem, you can contact Adarsh Shukla.</p>
+              </div>
+              <div class="section-message-user">
+                  <img src="images/avatar/avatar-1.png" alt="">
+                  <p>Thank you, to solve my problem.</p>
+                  <p>🙏🙏🙏</p>
+              </div>
+          </div>
+          <!-- CHAT FOOTER -->
+          <div class="support-chat-mode-footer">
+              <form action="" method="post">
+                  <span class="far fa-paperclip" onclick=""></span>
+                  <textarea name="" id="" cols="30" rows="1" placeholder="Write a msssage..." aria-placeholder="Write a msssage..."></textarea>
+                  <span class="far fa-smile" onclick=""></span>
+                  <button type="submit" class="far fa-chevron-right" aria-placeholder="Send"></button>
+              </form>
+          </div>
+      </div>
+  </div>
+
+
+  <!-- HEADER/HERO -->
+  <header class="hero">
+      <!-- TITLE HEADER -->
+      <h1>An unparalleled experience of <br> sound magic, MacroTune</h1>
+
+      <!-- FORM: SEARCH -->
+      <form action="" method="post">
+          <span class="far fa-search"></span>
+          <input type="search" placeholder="Search for music" aria-placeholder="Search for music">
+      </form>
+
+      <!-- IMAGE SUORCE -->
+  </header>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+            <h3>MacroTune</h3>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="0">
+              <img src="img/1.jpg" alt="" />
+            </a>
+            <h4>HANUMAN CHALISA</h4>
+            <p>Shekhar Ravjiani</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="1">
+              <img src="img/Ram Siya Ram.jpg" alt="" />
+            </a>
+            <h4>Ram Siya Ram</h4>
+            <p></p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="2">
+              <img src="img/ANAND SIR.jpg" alt="" />
+            </a>
+            <h4>ANAND SIR A TRIBUTE TO MOHAMMAD RAFI</h4>
+            <p></p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="3">
+              <img src="img/2.jpg" alt="" />
+            </a>
+            <h4>Pehla Pyaar</h4>
+            <p>Jubin Nautiyal</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="4">
+              <img src="img/3.jpg" alt="" />
+            </a>
+            <h4>PASOORI</h4>
+            <p>COKE STUDIO</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="5">
+              <img src="img/4.jpg" alt="">
+            </a>
+            <h4>STAY</h4>
+            <p>NORE SOLVE</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="6">
+              <img src="img/5.jpg" alt="">
+            </a>
+            <h4>Chaleya</h4>
+            <p>Arijit Singh, Shilpa Rao</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="7">
+              <img src="img/6.jpg" alt="" />
+            </a>
+            <h4>Apna Bana Le</h4>
+            <p>Arijit Singh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="8">
+              <img src="img/7.jpg" alt="" />
+            </a>
+            <h4>ARAMBH HAI PRACHAND</h4>
+            <p>SHRYLOX</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="9">
+              <img src="img/8.jpg" alt="" />
+            </a>
+            <h4>Maan Meri Jaan</h4>
+            <p>King</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="10">
+              <img src="img/9.jpg" alt="" />
+            </a>
+            <h4>Yeh Dosti</h4>
+            <p>Ayushmann Khurrana</p>
+          </div>
+
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="11">
+              <img src="img/10.jpg" alt="" />
+            </a>
+            <h4>O Maahi</h4>
+            <p>Arijit Singh</p>
+          </div>
+
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="12">
+              <img src="img/11.jpg" alt="" />
+            </a>
+            <h4>MONTERO</h4>
+            <p>LIL NASX</p>
+          </div>
+
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="13">
+              <img src="img/12.jpg" alt="" />
+            </a>
+            <h4>Unstoppable</h4>
+            <p>Sia</p>
+          </div>
+
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="14">
+              <img src="img/13.jpg" alt="" />
+            </a>
+            <h4>Shri Krishna Govind Hare Murari</h4>
+            <p>Jubin Nautiyal.</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="15">
+              <img src="img/14.jpg" alt="" />
+            </a>
+            <h4>MI AMOR</h4>
+            <p>Harsh Sandhu</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="16">
+              <img src="img/15.jpg" alt="" />
+            </a>
+            <h4>Yaarr Ni Milyaa</h4>
+            <p>Harrdy Sandhu</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="17">
+              <img src="img/16.jpg" alt="" />
+            </a>
+            <h4>GUNEHGAR</h4>
+            <p>Divine</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="18">
+              <img src="img/17.jpg" alt="" />
+            </a>
+            <h4>GANGSTA</h4>
+            <p>Karan Aujla and YG</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="19">
+              <img src="img/18.jpg" alt="" />
+            </a>
+            <h4>Suniya suniya </h4>
+            <p>Juss</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="20">
+              <img src="img/19.jpg" alt="" />
+            </a>
+            <h4>UNTOUCHABLE</h4>
+            <p>Tegi Pannu</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="21">
+              <img src="img/20.jpg" alt="" />
+            </a>
+            <h4>INSANE</h4>
+            <p>Eva Voytko</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="22">
+              <img src="img/21.jpg" alt="" />
+            </a>
+            <h4>90's Nonstop Jukebox | 90's Superhit Bollywood Songs</h4>
+            <p>ADARSH SHUKLA</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="23">
+              <img src="img/22.jpg" alt="" />
+            </a>
+            <h4>ON BS</h4>
+            <p>Drake & 21 Savage</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="24">
+              <img src="img/23.jpg" alt="" />
+            </a>
+            <h4>LET ME DOWN SLOWLY</h4>
+            <p>Alec Benjamin</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="25">
+              <img src="img/24.jpg" alt="" />
+            </a>
+            <h4>Nature</h4>
+            <p>Kabira</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="26">
+              <img src="img/25.jpg" alt="" />
+            </a>
+            <h4>HAR HAR SHAMBHU</h4>
+            <p>Abhilipsa Panda</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="27">
+              <img src="img/26.jpg" alt="" />
+            </a>
+            <h4>Saiyyan</h4>
+            <p>Kailash Kher</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="28">
+              <img src="img/27.jpg" alt="" />
+            </a>
+            <h4>DAKU</h4>
+            <p>Chani Natton</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="29">
+              <img src="img/28.jpg" alt="" />
+            </a>
+            <h4>JAI JAI SHIV SHANKAR</h4>
+            <p>Vishal Shekhar</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="30">
+              <img src="img/29.jpg" alt="" />
+            </a>
+            <h4>Demons</h4>
+            <p>Imagine Dragons</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="31">
+              <img src="img/30.jpg" alt="" />
+            </a>
+            <h4>CHANNA VE</h4>
+            <p>Akhil Sachdeva</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="32">
+              <img src="img/31.jpg" alt="" />
+            </a>
+            <h4>DEKHA EK KHWAB</h4>
+            <p>lata Mangeshkar</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="33">
+              <img src="img/32.jpg" alt="" />
+            </a>
+            <h4>DEKHA EK KHWAB X LAILA MASHUP</h4>
+            <p>lata Mangeshkar</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="34">
+              <img src="img/33.jpg" alt="" />
+            </a>
+            <h4>Hymn for the Weekend</h4>
+            <p>Coldplay </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="35">
+              <img src="img/34.jpg" alt="" />
+            </a>
+            <h4>Loot Liya</h4>
+            <p>Khasa Aala Chahar</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="36">
+              <img src="img/35.jpg" alt="" />
+            </a>
+            <h4>ALEX & RUS</h4>
+            <p></p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="37">
+              <img src="img/36.jpg" alt="" />
+            </a>
+            <h4>Kesariya</h4>
+            <p>Arijit Singh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="38">
+              <img src="img/37.jpg" alt="" />
+            </a>
+            <h4>Deva Deva</h4>
+            <p>Arijit Singh and Jonita Gandhi</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="39">
+              <img src="img/38.jpg" alt="" />
+            </a>
+            <h4>le le rom rom</h4>
+            <p>Harendar Nagar</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="40">
+              <img src="img/39.jpg" alt="" />
+            </a>
+            <h4>Apna Bana Le</h4>
+            <p>Arijit Singh and Sachin–Jigar</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="41">
+              <img src="img/40.jpg" alt="" />
+            </a>
+            <h4>Apa Fer Milaange</h4>
+            <p>Savi Kahlon</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="42">
+              <img src="img/41.jpg" alt="" />
+            </a>
+            <h4>Jeda Nasha</h4>
+            <p>Smitx99</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="43">
+              <img src="img/42.jpg" alt="" />
+            </a>
+            <h4>Sami Sami</h4>
+            <p>Sunidhi Chauhan</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="44">
+              <img src="img/43.jpg" alt="" />
+            </a>
+            <h4>Srivalli</h4>
+            <p>Sid Sriram</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="45">
+              <img src="img/44.jpg" alt="" />
+            </a>
+            <h4>Banjaara</h4>
+            <p>Ankit Tiwari</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="46">
+              <img src="img/45.jpg" alt="" />
+            </a>
+            <h4>Angaro ka ambar sa</h4>
+            <p>Shreya Ghoshal</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="47">
+              <img src="img/46.jpg" alt="" />
+            </a>
+            <h4>Radha Rani Lage</h4>
+            <p>Simpal Kharel</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="48">
+              <img src="img/47.jpg" alt="" />
+            </a>
+            <h4>Aigiri Nandini</h4>
+            <p>	Debolinaa Nandy</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="49">
+              <img src="img/48.jpg" alt="" />
+            </a>
+            <h4>Tujhe Kitna Chahne Lage</h4>
+            <p>Arijit Singh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="50">
+              <img src="img/49.jpg" alt="" />
+            </a>
+            <h4>Aasman Ko Chukar</h4>
+            <p>Daler Mehndi</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="51">
+              <img src="img/50.jpg" alt="" />
+            </a>
+            <h4>O Re Piya</h4>
+            <p>Rahat Fateh Ali Khan</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="52">
+              <img src="img/51.jpg" alt="" />
+            </a>
+            <h4>Dusk till dawn</h4>
+            <p>Zyan Malik</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="53">
+              <img src="img/52.jpg" alt="" />
+            </a>
+            <h4>Kaise Hua</h4>
+            <p>Vishal Mishra</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="54">
+              <img src="img/53.jpg" alt="" />
+            </a>
+            <h4>Bekhayali</h4>
+            <p>Sachet Tandon</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="55">
+              <img src="img/54.jpg" alt="" />
+            </a>
+            <h4>Mere Sohneya</h4>
+            <p>Parampara Thakur and Sachet Tandon</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="56">
+              <img src="img/55.jpg" alt="" />
+            </a>
+            <h4>Bulleya</h4>
+            <p>Amit Mishra</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="57">
+              <img src="img/56.jpg" alt="" />
+            </a>
+            <h4>Channa Mereya</h4>
+            <p>Arijit Singh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="58">
+              <img src="img/57.jpg" alt="" />
+            </a>
+            <h4>Meditation beats</h4>
+            <p>Adarsh Shukla</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="59">
+              <img src="img/58.jpg" alt="" />
+            </a>
+            <h4>Ae Dil Hai Mushkil</h4>
+            <p>Arijit Singh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="60">
+              <img src="img/59.jpg" alt="" />
+            </a>
+            <h4>Bhagatt aadmi</h4>
+            <p>Aman Jaji, Anjali 99, and Masoom Sharma </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="61">
+              <img src="img/60.jpg" alt="" />
+            </a>
+            <h4>Long Time No See</h4>
+            <p>Taimour Baig</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="62">
+              <img src="img/61.jpg" alt="" />
+            </a>
+            <h4>Moonlight</h4>
+            <p>Harnoor</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="63">
+              <img src="img/62.jpg" alt="" />
+            </a>
+            <h4>Dilbar</h4>
+            <p>Kaka</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="64">
+              <img src="img/63.jpg" alt="" />
+            </a>
+            <h4>Badaami Rang</h4>
+            <p>Nikk</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="65">
+              <img src="img/64.jpg" alt="" />
+            </a>
+            <h4>Prada</h4>
+            <p>Jass Manak</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="66">
+              <img src="img/65.jpg" alt="" />
+            </a>
+            <h4>Suit Punjabi</h4>
+            <p>Jass Manak</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="67">
+              <img src="img/66.jpg" alt="" />
+            </a>
+            <h4>Lehanga</h4>
+            <p>Jass Manak</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="68">
+              <img src="img/67.jpg" alt="" />
+            </a>
+            <h4>So High</h4>
+            <p>Sidhu Moose Wala</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="69">
+              <img src="img/68.jpg" alt="" />
+            </a>
+            <h4>295</h4>
+            <p>Sidhu Moose Wala</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="70">
+              <img src="img/69.jpg" alt="" />
+            </a>
+            <h4>Black Effect</h4>
+            <p>Song by Jordan Sandhu</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="71">
+              <img src="img/70.jpg" alt="" />
+            </a>
+            <h4>Legend</h4>
+            <p>Sidhu Moose Wala</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="72">
+              <img src="img/71.jpg" alt="" />
+            </a>
+            <h4>Levels</h4>
+            <p>Sidhu Moose Wala</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="73">
+              <img src="img/72.jpg" alt="" />
+            </a>
+            <h4>Baller</h4>
+            <p>Shubh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="74">
+              <img src="img/73.jpg" alt="" />
+            </a>
+            <h4>Death Bed (Coffee for Your Head)</h4>
+            <p>Powfu</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="75">
+              <img src="img/74.jpg" alt="" />
+            </a>
+            <h4>Dark Love</h4>
+            <p>Sidhu Moose Wala</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="76">
+              <img src="img/75.jpg" alt="" />
+            </a>
+            <h4>Top Mind Relax Lofi Mashup (Slowed Reverb)</h4>
+            <p>ADARSH SHUKLA</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="77">
+              <img src="img/76.jpg" alt="" />
+            </a>
+            <h4>Bambiha Bole</h4>
+            <p>Sidhu Moose Wala</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="78">
+              <img src="img/77.jpg" alt="" />
+            </a>
+            <h4>Ain't that bad</h4>
+            <p>Gagan kooner</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="79">
+              <img src="img/78.jpg" alt="" />
+            </a>
+            <h4>Night Changes</h4>
+            <p> One Direction</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="80">
+              <img src="img/79.jpg" alt="" />
+            </a>
+            <h4>We Rollin</h4>
+            <p>Shubh
+            </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="81">
+              <img src="img/80.jpg" alt="" />
+            </a>
+            <h4>You and ME</h4>
+            <p>Shubh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="82">
+              <img src="img/81.jpg" alt="" />
+            </a>
+            <h4>Gangsta's Paradise</h4>
+            <p>Coolio and Kylian Mash
+            </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="83">
+              <img src="img/82.jpg" alt="" />
+            </a>
+            <h4>Mask Off</h4>
+            <p>Future
+            </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="84">
+              <img src="img/83.jpg" alt="" />
+            </a>
+            <h4>Love Nwantiti</h4>
+            <p>CKay</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="85">
+              <img src="img/84.jpg" alt="" />
+            </a>
+            <h4>Peaky Blinder</h4>
+            <p>Duke Luke and Otnicka
+            </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="86">
+              <img src="img/85.jpg" alt="" />
+            </a>
+            <h4>Mirchi</h4>
+            <p>Divine</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="87">
+              <img src="img/86.jpg" alt="" />
+            </a>
+            <h4>Ravan Ravan Hoon Main</h4>
+            <p>Rock D</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="88">
+              <img src="img/87.jpg" alt="" />
+            </a>
+            <h4>Jai Shree Ram</h4>
+            <p>Shekhar Astitwa and Vikram Montrose</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="89">
+              <img src="img/88.jpg" alt="" />
+            </a>
+            <h4>Khairiyat</h4>
+            <p>Arijit Singh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="90">
+              <img src="img/89.jpg" alt="" />
+            </a>
+            <h4>Qaafirana (Kedarnath)</h4>
+            <p>Arijit Singh and Nikhita Gandhi</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="91">
+              <img src="img/90.jpg" alt="" />
+            </a>
+            <h4>Namo Namo (Kedarnath)</h4>
+            <p>Amit Trivedi            </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="92">
+              <img src="img/91.jpg" alt="" />
+            </a>
+            <h4>Expert Jatt</h4>
+            <p>Nawab</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="93">
+              <img src="img/92.jpg" alt="" />
+            </a>
+            <h4>Middle of the Night</h4>
+            <p>Elley Duhé            </p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="94">
+              <img src="img/93.jpg" alt="" />
+            </a>
+            <h4>Maan Meri Jaan</h4>
+            <p>king</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="95">
+              <img src="img/94.jpg" alt="" />
+            </a>
+            <h4>Tu Aake Dekhle</h4>
+            <p>king</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="96">
+              <img src="img/95.jpg" alt="" />
+            </a>
+            <h4>Shiv Tandav</h4>
+            <p>bhakti records</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="97">
+              <img src="img/96.jpg" alt="" />
+            </a>
+            <h4>Yaari</h4>
+            <p>Nikk</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="98">
+              <img src="img/97.jpg" alt="" />
+            </a>
+            <h4>Tora</h4>
+            <p>Sumit Goswam</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="99">
+              <img src="img/98.jpg" alt="" />
+            </a>
+            <h4>Kali kali zulfon ke</h4>
+            <p>Madhur Sharma</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="100">
+              <img src="img/99.jpg" alt="" />
+            </a>
+            <h4>Haan Main Galat</h4>
+            <p>Arijit Singh, Pritam Chakraborty, and Shashwat Singh</p>
+          </div>
+          <div class="col-md-3">
+            <a href="javascript:void();" class="album-poster" data-switch="101">
+              <img src="img/100.jpg" alt="" />
+            </a>
+            <h4>Army</h4>
+            <p>Sumit Goswami</p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const albumPosters = document.querySelectorAll('.album-poster');
+            albumPosters.forEach(poster => {
+                poster.addEventListener('click', function() {
+                    const switchValue = this.getAttribute('data-switch');
+                    // Handle the click event based on data-switch value
+                    console.log('Clicked album with switch value:', switchValue);
+                    // Add your logic here
+                });
+            });
+        });
+    </script>
+
+    <div id="aplayer"></div>
+    <script src="js/aplayer1.js"></script>
+    <script src="js/aplayer2.js"></script>
+    <script src="js/aplayer3.js"></script>
+
+    <script>
+      $(".album-poster").on("click", function (e) {
+        var dataSwitchId = $(this).attr("data-switch");
+        ap.list.switch(dataSwitchId);
+        ap.play();
+        $("#aplayer").addClass("showPlayer");
+      });
+
+      const ap = new APlayer({
+        container: document.getElementById("aplayer"),
+        listFolded: true,
+        audio: [
+          {
+            name: "Hanuman Chalisa",
+            artist: "",
+            url: "music/1.mp3",
+            cover: "img/1.jpg",
+          },
+          {
+            name: "Ram Siya Ram",
+            artist: "",
+            url: "music/101.mp3",
+            cover: "img/Ram Siya Ram.jpg",
+          },
+          {
+            name: "ANAND SIR A TRIBUTE TO MOHAMMAD RAFI",
+            artist: "",
+            url: "music/102.mp3",
+            cover: "img/ANAND SIR.jpg",
+          },
+          {
+            name: "Pehla Pyaar",
+            artist: "Jubin Nautiyal",
+            url: "music/2.mp3",
+            cover: "img/2.jpg",
+          },
+          {
+            name: "PASOORI",
+            artist: "COKE STUDIO",
+            url: "music/3.mp3",
+            cover: "img/3.jpg",
+          },
+
+          {
+            name: "STAY",
+            artist: "NORESOLVE",
+            url: "music/4.mp3",
+            cover: "img/4.jpg",
+          },
+
+          {
+            name: "Chaleya",
+            artist: "Arijit Singh, Shilpa Rao",
+            url: "music/5.mp3",
+            cover: "img/5.jpg",
+          },
+          {
+            name: "Apna Bana Le",
+            artist: "Arijit Singh",
+            url: "music/6.mp3",
+            cover: "img/6.jpg",
+          },
+          {
+            name: "ARAMBH HAI PRACHAND",
+            artist: "SHRYLOX",
+            url: "music/7.mp3",
+            cover: "img/7.jpg",
+          },
+          {
+            name: "Maan Meri Jaan",
+            artist: "FKing",
+            url: "music/8.mp3",
+            cover: "img/8.jpg",
+          },
+
+          {
+            name: "Yeh Dosti",
+            artist: "Ayushmann Khurrana",
+            url: "music/9.mp3",
+            cover: "img/9.jpg",
+          },
+          {
+            name: "O Maahi",
+            artist: "Arijit Singh",
+            url: "music/10.mp3",
+            cover: "img/10.jpg",
+          },
+          {
+            name: "MONTERO",
+            artist: "LIL NASX",
+            url: "music/11.mp3",
+            cover: "img/11.jpg",
+          },
+          {
+            name: "Unstoppable",
+            artist: "Sia",
+            url: "music/12.mp3",
+            cover: "img/12.jpg",
+          },
+          {
+            name: "Shri Krishna Govind Hare Murari",
+            artist: "Jubin Nautiyal",
+            url: "music/13.mp3",
+            cover: "img/13.jpg",
+          },
+          {
+            name: "Mi Amor",
+            artist: "Harsh Sandhu",
+            url: "music/14.mp3",
+            cover: "img/14.jpg",
+          },
+          {
+            name: "Yaarr Ni Milyaa",
+            artist: "Harrdy Sandhu",
+            url: "music/15.mp3",
+            cover: "img/15.jpg",
+          },
+          {
+            name: "Gunehgar",
+            artist: "Divine",
+            url: "music/16.mp3",
+            cover: "img/16.jpg",
+          },
+          {
+            name: "Gangsta",
+            artist: "Karan Aujla and YG",
+            url: "music/17.mp3",
+            cover: "img/17.jpg",
+          },
+          {
+            name: "Suniya suniya ",
+            artist: "Juss",
+            url: "music/18.mp3",
+            cover: "img/18.jpg",
+          },
+          {
+            name: "Untouchable",
+            artist: "Tegi Pannu",
+            url: "music/19.mp3",
+            cover: "img/19.jpg",
+          },
+          {
+            name: "Insane",
+            artist: "Eva Voytko",
+            url: "music/20.mp3",
+            cover: "img/20.jpg",
+          },
+          {
+            name: "90's Nonstop Jukebox | 90's Superhit Bollywood Songs",
+            artist: "ADARSH SHUKLA",
+            url: "music/21.mp3",
+            cover: "img/21.jpg",
+          },
+          {
+            name: "On Bs",
+            artist: "Drake & 21 Savage",
+            url: "music/22.mp3",
+            cover: "img/22.jpg",
+          },
+          {
+            name: "Let Me Down Slowly",
+            artist: "Alec Benjamin",
+            url: "music/23.mp3",
+            cover: "img/23.jpg",
+          },
+          {
+            name: "Nature",
+            artist: "Kabira",
+            url: "music/24.mp3",
+            cover: "img/24.jpg",
+          },
+
+          {
+            name: "Har Har Shambhu",
+            artist: "Abhilipsa Panda",
+            url: "music/25.mp3",
+            cover: "img/25.jpg",
+          },
+          {
+            name: "Saiyyan",
+            artist: "Kailash Kher",
+            url: "music/26.mp3",
+            cover: "img/26.jpg",
+          },
+          {
+            name: "Daku",
+            artist: "Chani Nattan",
+            url: "music/27.mp3",
+            cover: "img/27.jpg",
+          },
+          {
+            name: "Jai Jai Shivshankar",
+            artist: "Vishal-Shekhar",
+            url: "music/28.mp3",
+            cover: "img/28.jpg",
+          },
+          {
+            name: "Demons",
+            artist: "Imagine Dragons",
+            url: "music/29.mp3",
+            cover: "img/29.jpg",
+          },
+          {
+            name: "Channa Ve",
+            artist: "Akhil Sachdeva",
+            url: "music/30.mp3",
+            cover: "img/30.jpg",
+          },
+          {
+            name: "Dekha Ek Khwab",
+            artist: "Lata Mangeshkar",
+            url: "music/31.mp3",
+            cover: "img/31.jpg",
+          },
+          {
+            name: "Dekha Ek Khwab X Laila Mashup",
+            artist: "Lata Mangeshkar",
+            url: "music/32.mp3",
+            cover: "img/32.jpg",
+          },
+          {
+            name: "Hymn for the Weekend",
+            artist: "Coldplay",
+            url: "music/33.mp3",
+            cover: "img/33.jpg",
+          },
+          {
+            name: "Loot Liya",
+            artist: "Khasa Aala Chahar",
+            url: "music/34.mp3",
+            cover: "img/34.jpg",
+          },
+          {
+            name: "Alex & Rus",
+            artist: "Alex & Rus",
+            url: "music/35.mp3",
+            cover: "img/35.jpg",
+          },
+          {
+            name: "Kesariya",
+            artist: "Arijit Singh",
+            url: "music/36.mp3",
+            cover: "img/36.jpg",
+          },
+          {
+            name: "Deva Deva",
+            artist: "Arijit Singh and Jonita Gandhi",
+            url: "music/37.mp3",
+            cover: "img/37.jpg",
+          },
+          {
+            name: "le le rom rom",
+            artist: "Harendar Nagar",
+            url: "music/38.mp3",
+            cover: "img/38.jpg",
+          },
+          {
+            name: "Apna Bana Le",
+            artist: "Arijit Singh and Sachin–Jigar",
+            url: "music/39.mp3",
+            cover: "img/39.jpg",
+          },
+          {
+            name: "Apa Fer Milaangey",
+            artist: "Savi Kahlon ",
+            url: "music/40.mp3",
+            cover: "img/40.jpg",
+          },
+          {
+            name: "Jeda Nasha",
+            artist: "Smitx99",
+            url: "music/41.mp3",
+            cover: "img/41.jpg",
+          },
+          {
+            name: "Sami Sami",
+            artist: "Sunidhi Chauhan",
+            url: "music/42.mp3",
+            cover: "img/42.jpg",
+          },
+          {
+            name: "Srivalli",
+            artist: "Sid Sriram",
+            url: "music/43.mp3",
+            cover: "img/43.jpg",
+          },
+          {
+            name: "Banjaara",
+            artist: "Ankit Tiwari",
+            url: "music/44.mp3",
+            cover: "img/44.jpg",
+          },
+          {
+            name: "Angaro ka ambar sa",
+            artist: "Shreya Ghoshal",
+            url: "music/45.mp3",
+            cover: "img/45.jpg",
+          },
+          {
+            name: "Radha rani lage",
+            artist: "Simpal Kharel",
+            url: "music/46.mp3",
+            cover: "img/46.jpg",
+          },
+          {
+            name: "Aigiri Nandini",
+            artist: "Debolinaa Nandy",
+            url: "music/47.mp3",
+            cover: "img/47.jpg",
+          },
+          {
+            name: "Tujhe Kitna Chahne Lage",
+            artist: "Arijit Singh",
+            url: "music/48.mp3",
+            cover: "img/48.jpg",
+          },
+          {
+            name: "Aasman Ko Chukar",
+            artist: "Daler Mehndi",
+            url: "music/49.mp3",
+            cover: "img/49.jpg",
+          },
+          {
+            name: "O Re Piya",
+            artist: "Rahat Fateh Ali Khan",
+            url: "music/50.mp3",
+            cover: "img/50.jpg",
+          },
+          {
+            name: "Dusk till dawn",
+            artist: "Zyan Malik",
+            url: "music/51.mp3",
+            cover: "img/51.jpg",
+          },
+          {
+            name: "Kaise Hua",
+            artist: "Vishal Mishra",
+            url: "music/52.mp3",
+            cover: "img/52.jpg",
+          },
+          {
+            name: "Bekhayali",
+            artist: "Sachet Tandon",
+            url: "music/53.mp3",
+            cover: "img/53.jpg",
+          },
+          {
+            name: "Mere Sohneya",
+            artist: "Parampara Thakur and Sachet Tandon",
+            url: "music/54.mp3",
+            cover: "img/54.jpg",
+          },
+          {
+            name: "Bulleya",
+            artist: "Amit Mishra",
+            url: "music/55.mp3",
+            cover: "img/55.jpg",
+          },
+          {
+            name: "Channa Mereya",
+            artist: "Arijit Singh",
+            url: "music/56.mp3",
+            cover: "img/56.jpg",
+          },
+          {
+            name: "Meditation beats",
+            artist: "Adarsh Shukla",
+            url: "music/57.mp3",
+            cover: "img/57.jpg",
+          },
+          {
+            name: "Ae Dil Hai Mushkil",
+            artist: "Arijit Singh",
+            url: "music/58.mp3",
+            cover: "img/58.jpg",
+          },
+          {
+            name: "Bhagatt aadmi",
+            artist: "Aman Jaji, Anjali 99, and Masoom Sharma",
+            url: "music/59.mp3",
+            cover: "img/59.jpg",
+          },
+          {
+            name: "Long Time No See",
+            artist: "Taimour Baig",
+            url: "music/60.mp3",
+            cover: "img/60.jpg",
+          },
+          {
+            name: "Moonlight",
+            artist: "Harnoor",
+            url: "music/61.mp3",
+            cover: "img/61.jpg",
+          },
+          {
+            name: "Dildar",
+            artist: "Kaka",
+            url: "music/62.mp3",
+            cover: "img/62.jpg",
+          },
+          {
+            name: "Badaami Rang",
+            artist: "Nikk",
+            url: "music/63.mp3",
+            cover: "img/63.jpg",
+          },
+          {
+            name: "Prada",
+            artist: "Jass Manak",
+            url: "music/64.mp3",
+            cover: "img/64.jpg",
+          },
+          {
+            name: "Suit Punjabi",
+            artist: "Jass Manak",
+            url: "music/65.mp3",
+            cover: "img/65.jpg",
+          },
+          {
+            name: "Lehanga",
+            artist: "Jass Manak",
+            url: "music/66.mp3",
+            cover: "img/66.jpg",
+          },
+          {
+            name: "So High",
+            artist: "Sidhu Moose Wala",
+            url: "music/67.mp3",
+            cover: "img/67.jpg",
+          },
+          {
+            name: "295",
+            artist: "Sidhu Moose Wala",
+            url: "music/68.mp3",
+            cover: "img/68.jpg",
+          },
+          {
+            name: "Black Effect",
+            artist: "Song by Jordan Sandhu",
+            url: "music/69.mp3",
+            cover: "img/69.jpg",
+          },
+          {
+            name: "Legend",
+            artist: "Sidhu Moose Wala",
+            url: "music/70.mp3",
+            cover: "img/70.jpg",
+          },
+          {
+            name: ">Levels",
+            artist: "Sidhu Moose Wala",
+            url: "music/71.mp3",
+            cover: "img/71.jpg",
+          },
+          {
+            name: "Baller",
+            artist: "shubh",
+            url: "music/72.mp3",
+            cover: "img/72.jpg",
+          },
+          {
+            name: "Death Bed (Coffee for Your Head)",
+            artist: "Powfu",
+            url: "music/73.mp3",
+            cover: "img/73.jpg",
+          },
+          {
+            name: "Dark Love",
+            artist: "Sidhu Moose Wala",
+            url: "music/74.mp3",
+            cover: "img/74.jpg",
+          },
+          {
+            name: "Top Mind Relax Lofi Mashup (Slowed Reverb)",
+            artist: "ADARSH SHUKLA",
+            url: "music/75.mp3",
+            cover: "img75.jpg",
+          },
+          {
+            name: "Bambiha Bole",
+            artist: "Sidhu Moose Wala",
+            url: "music/76.mp3",
+            cover: "img/76.jpg",
+          },
+          {
+            name: "Ain't that bad",
+            artist: "Gagan kooner",
+            url: "music/77.mp3",
+            cover: "img/77.jpg",
+          },
+          {
+            name: "Night Changes",
+            artist: "One Direction",
+            url: "music/78.mp3",
+            cover: "img/78.jpg",
+          },
+          {
+            name: "We Rollin",
+            artist: "Shubh",
+            url: "music/79.mp3",
+            cover: "img/79.jpg",
+          },
+          {
+            name: "You and Me",
+            artist: "Shubh",
+            url: "music/80.mp3",
+            cover: "img/80.jpg",
+          },
+          {
+            name: "Gangsta's Paradise",
+            artist: "Coolio and Kylian Mash",
+            url: "music/81.mp3",
+            cover: "img/81.jpg",
+          },
+          {
+            name: "Mask Off",
+            artist: "Future",
+            url: "music/82.mp3",
+            cover: "img/82.jpg",
+          },
+          {
+            name: "Love Nwantiti",
+            artist: "CKay",
+            url: "music/83.mp3",
+            cover: "img/83.jpg",
+          },
+          {
+            name: "Peaky Blinder",
+            artist: "Duke Luke and Otnicka",
+            url: "music/84.mp3",
+            cover: "img/84.jpg",
+          },
+          {
+            name: "Mirchi",
+            artist: "Divine",
+            url: "music/85.mp3",
+            cover: "img/85.jpg",
+          },
+          {
+            name: "Ravan Ravan Hoon Main",
+            artist: "Rock D",
+            url: "music/86.mp3",
+            cover: "img/86.jpg",
+          },
+          {
+            name: "Jai Shree Ram",
+            artist: "Shekhar Astitwa and Vikram Montrose",
+            url: "music/87.mp3",
+            cover: "img/87.jpg",
+          },
+          {
+            name: "Khairiyat",
+            artist: "Arijit Singh",
+            url: "music/88.mp3",
+            cover: "img/88.jpg",
+          },
+          {
+            name: "Qaafirana (Kedarnath)",
+            artist: "Arijit Singh and Nikhita Gandhi",
+            url: "music/89.mp3",
+            cover: "img/89.jpg",
+          },
+          {
+            name: "Namo Namo (Kedarnath)",
+            artist: "Amit Trivedi",
+            url: "music/90.mp3",
+            cover: "img/90.jpg",
+          },
+          {
+            name: "Expert Jatt",
+            artist: "Nawab",
+            url: "music/91.mp3",
+            cover: "img/91.jpg",
+          },
+          {
+            name: "Middle of the Night",
+            artist: "Elley Duhé",
+            url: "music/92.mp3",
+            cover: "img/92.jpg",
+          },
+          {
+            name: "Maan Meri Jaan",
+            artist: "king",
+            url: "music/93.mp3",
+            cover: "img/93.jpg",
+          },
+          {
+            name: "Tu Aake Dekhle",
+            artist: "king",
+            url: "music/94.mp3",
+            cover: "img/94.jpg",
+          },
+          {
+            name: "Shiv Tandav",
+            artist: "bhakti records",
+            url: "music/95.mp3",
+            cover: "img/95.jpg",
+          },
+          {
+            name: "Yaari",
+            artist: "Nikk",
+            url: "music/96.mp3",
+            cover: "img/96.jpg",
+          },
+          {
+            name: "Tora",
+            artist: "Sumit Goswam",
+            url: "music/97.mp3",
+            cover: "img/97.jpg",
+          },
+          {
+            name: "kali kali zulfon ke",
+            artist: "Madhur Sharma",
+            url: "music/98.mp3",
+            cover: "img/98.jpg",
+          },
+          {
+            name: "Haan Main Galat",
+            artist: "Arijit Singh, Pritam Chakraborty, and Shashwat Singh",
+            url: "music/99.mp3",
+            cover: "img/99.jpg",
+          },
+          {
+            name: "Army",
+            artist: "Sumit Goswami",
+            url: "music/100.mp3",
+            cover: "img/100.jpg",
+          },
+        ],
+      });
+    </script>
+
+
+<style>
+  body {
+    background: linear-gradient(
+        217deg,
+        rgba(0, 145, 255, 0.8),
+        rgba(7, 216, 115, 0) 70.71%
+      ),
+      linear-gradient(127deg, rgba(247, 0, 255, 0.8), rgb(13, 219, 157) 70.71%),
+      linear-gradient(
+        336deg,
+        rgba(0, 140, 255, 0.886),
+        rgba(0, 0, 255, 0) 70.71%
+      );
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+  }
+  .main {
+    padding: 40px 0;
+    background: linear-gradient(
+        217deg,
+        rgba(0, 145, 255, 0.8),
+        rgba(7, 216, 115, 0) 70.71%
+      ),
+      linear-gradient(127deg, rgba(247, 0, 255, 0.8), rgb(13, 219, 157) 70.71%),
+      linear-gradient(
+        336deg,
+        rgba(0, 140, 255, 0.886),
+        rgba(0, 0, 255, 0) 70.71%
+      );
+  }
+  .col-md-3 {
+    margin-bottom: 40px;
+  }
+  .album-poster {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    transition: all ease 0.4s;
+    border-radius: 15px;
+    box-shadow: 1px 0px 20px 12px rgba(240, 240, 240, 0.2);
+  }
+  .album-poster:hover {
+    box-shadow: none;
+    transform: scale(0.98) translateY(5px);
+  }
+  h3 {
+    font-size: 34px;
+    margin-bottom: 34px;
+    border-bottom: 4px solid #e6e6e6;
+    padding-bottom: 15px;
+  }
+  p {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    font-weight: 700;
+  }
+
+  #aplayer {
+    position: fixed;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: 0 -2px 2px #dadada;
+    background-color: #fff;
+    transition: all ease 0.5s;
+  }
+  #aplayer.showPlayer {
+    bottom: 0;
+  }
+
+  span {
+    color: #000 !important;
+    font-size: 16px;
+  }
+  .aplayer
+    .aplayer-info
+    .aplayer-controller
+    .aplayer-bar-wrap
+    .aplayer-bar
+    .aplayer-loaded {
+    background: linear-gradient(
+        217deg,
+        rgb(255 0 204 / 80%),
+        rgb(255 0 0 / 0%) 70.71%
+      ),
+      linear-gradient(127deg, rgb(0 255 231 / 80%), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgb(228 0 255 / 80%), rgba(0, 0, 255, 0) 70.71%);
+    height: 4px;
+  }
+  .aplayer
+    .aplayer-info
+    .aplayer-controller
+    .aplayer-bar-wrap
+    .aplayer-bar
+    .aplayer-played {
+    height: 4px;
+    background-color: #2196f3 !important;
+  }
+  .aplayer
+    .aplayer-info
+    .aplayer-controller
+    .aplayer-bar-wrap
+    .aplayer-bar
+    .aplayer-played
+    .aplayer-thumb {
+    background-color: #2196f3 !important;
+  }
+  .aplayer .aplayer-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+    fill: #000;
+  }
+  .aplayer .aplayer-info .aplayer-music {
+    margin-bottom: 5px;
+  }
+</style>
+ 
+<!-- FOOTER -->
+<footer style="background-color:rgb(181, 181, 181);">
+  <div class="footer-grid">
+      <ul>
+          <div>
+              <img src="images/logo/SVG/Audiospark_Logo.png" alt="" width="150px" id="logoFooterModeLight">
+              <img src="images/logo/SVG/Audiospark_Logo_White.png" alt="" width="150px" id="logoFooterModeDark">
+              <p>An unparalleled experience of sound magic, MacroTune<br> By Student of MVA, Adarsh Shukla 12TH Star 2024-25 <br>Insta: pt.adarshshukla </p>
+              <!-- SOCIAL MEDIA -->
+              
+
+              <!-- FOOTER ICON -->
+              
+          </div>
+      </ul>
+      <ul>
+          <h4>MacroTune</h4>
+          <li><a href="index.html">HOME</a></li>
+          <a href="about.html"><li>ABOUT</li></a>
+      
+  </div>
+
+  <!-- FOOTER COPYRIGHT -->
+  <div class="footer-copyright">
+    <p>© 2023 MacroTune. All rights reserved.<br>By Adarsh Shukla.</p>
+  </div>
+</footer>
+
+
+<!-- BACK TOP -->
+<a href="#Top">
+  <div class="back-top" id="backTop">
+      <span class="far fa-angle-up"></span>
+  </div>
+</a>
+
+
+
+<!-- IMPORT JS -->
+<script src="js/app.js"></script>
+</body>
+</html>

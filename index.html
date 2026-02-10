@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="An unparalleled experience of sound magic, Audiospark">
+        <meta name="keywords" content="Audiospark">
+        <meta name="theme-color" content="#0000FF">
+
+        <!-- IMPORT CSS MAIN -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- IMPORT FONT AWESOME -->
+        <link rel="stylesheet" type="text/css" href="fonts/css/fontawesome.min.css">
+        <link rel="stylesheet" type="text/css" href="fonts/css/all.min.css">
+        <!-- IMPORT FAVICON -->
+        <link rel="shortcut icon" href="images/logo/SVG/Audiospark_Logo_Icon.svg" type="image/x-icon">
+        
+        <!-- TITLE -->
+        <title>MacroTune</title>
+        <style>
+      /* Styles for your existing webpage */
+        /* Prevent right-click and text selection */
+        body {
+            -webkit-user-select: none; /* Chrome/Safari */
+            -moz-user-select: none; /* Firefox */
+            -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version */
+        }
+        </style>
+   
+            <!-- Include your existing JavaScript scripts here -->
+            
+            
+
+        <!-- LOADER -->
+        <div class="loader-warpper" id="loader">
+            <div class="loader"></div>
+        </div>
+
+
+        <!-- NAVBAR -->
+        <nav id="navbarFixed">
+            <ul>
+                <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Menu" aria-label="Menu" class="fa-bars-mobile"><span class="far fa-bars"></span></a>
+                <a href="index.html"><img src="images/logo/SVG/Audiospark_Logo_Icon.svg" alt="" title="MacroTune"></a>
+                <ul id="navbarMobileToggle">
+                    <a href="javascript:void(0)" onclick="navbarMobileToggle()" title="Close Menu" aria-label="Close Menu" class="fa-close-mobile"><span class="far fa-close"></span></a>
+                    
+                    <a href="#explore"><li>Explore</li></a>
+                    <a href="live.html"><li>Songs</li></a>
+                    <a href="about.html"><li>About</li></a>
+                    
+                    
+                </ul>
+            </ul>
+            <ul>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnDark" title="Switch Dark Mode" aria-label="Switch Dark Mode"><span class="far fa-moon"></span></a>
+                <a href="javascript:void(0)" onclick="switchMode()" id="switchModeBtnLight" title="Switch Light Mode" aria-label="Switch Light Mode"><span class="far fa-sun"></span></a>
+                <a href="javascript:void(0)" onclick="searchMode()" title="Search" aria-label="Search"><span class="far fa-search"></span></a>
+                
+
+               
+            </ul>
+        </nav>
+
+        <!-- SEARCH MODE -->
+        <div class="overlay-search-mode" id="overlaySearchMode">
+            <div class="search-mode" id="searchMode">
+                <a href="javascript:void(0)" onclick="searchMode()"></a>
+                <!-- FORM: SEARCH -->
+                <form action="" method="post">
+                    <span class="far fa-search"></span>
+                    <input type="search" placeholder="Search" aria-placeholder="Search">
+                </form>
+            </div>
+        </div>
+
+        <!-- SUPPORT & CHAT MODE -->
+        <div class="overlay-support-chat-mode" id="supportChatMode">
+            <div class="support-chat-mode">
+                <!-- CHAT HEADER -->
+                <div class="support-chat-mode-header">
+                    <h4>Support <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="" title="Audiospark Bot"></h4>
+                    <a href="javascript:void(0)" onclick="supportChatMode()"><span class="far fa-close"></span></a>
+                </div>
+                <!-- CHAT BODY -->
+                <div class="support-chat-mode-body">
+                    <div class="chat-date">2024</div>
+                    <div class="section-message-bot">
+                        <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                        <p>Hello! How can I assist you today?</p>
+                    </div>
+                    <div class="section-message-user">
+                        <img src="images/avatar/avatar-1.png" alt="">
+                        <p>Hi</p>
+                        <p>How to download as music???</p>
+                    </div>
+                    <div class="section-message-bot">
+                        <img src="images/logo/PNG/Audiospark_Logo_Icon/Audiospark_Logo_Icon@2400.png" alt="">
+                        <p>You are not allowed to download Musics As per policy of MacroNet.
+                        <br><br>
+                        If you have a problem, you can contact Adarsh Shukla.</p>
+                    </div>
+                    <div class="section-message-user">
+                        <img src="images/avatar/avatar-1.png" alt="">
+                        <p>Thank you, to solve my problem.</p>
+                        <p>🙏🙏🙏</p>
+                    </div>
+                </div>
+                <!-- CHAT FOOTER -->
+                <div class="support-chat-mode-footer">
+                    <form action="" method="post">
+                        <span class="far fa-paperclip" onclick=""></span>
+                        <textarea name="" id="" cols="30" rows="1" placeholder="Write a msssage..." aria-placeholder="Write a msssage..."></textarea>
+                        <span class="far fa-smile" onclick=""></span>
+                        <button type="submit" class="far fa-chevron-right" aria-placeholder="Send"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- HEADER/HERO -->
+        <header class="hero">
+            <!-- TITLE HEADER -->
+            <h1>An unparalleled experience of <br> sound magic, MacroTune</h1>
+
+            <!-- FORM: SEARCH -->
+            <form action="" method="post">
+                <span class="far fa-search"></span>
+                <input type="search" placeholder="Search for music" aria-placeholder="Search for music">
+            </form>
+
+            <!-- IMAGE SUORCE -->
+        </header>
+
+
+        <!-- MAIN -->
+        <main>
+            <!-- #SECTION: EXPLORE -->
+            <section class="section-explore" id="explore">
+                <!-- EXPLORE MENU -->
+                <div class="section-explore-menu">
+                    <a href="#" class="section-explore-menu-item-active">Your Favourite's</a>
+                    
+                </div>
+
+                <!-- EXPLORE SLIDER -->
+                
+
+            <!-- #SECTION: FEATURED CREATORS -->
+            <section class="section-featured-creators" id="featured_creators">
+                <div>
+                    <h2>Songs (Bhajan, Hindi, English, Punjabi and Haryanvi)</h2>
+                    <p><a href="live.html">See all</a></p>
+                </div>
+
+                <!-- FEATURED CREATORS SLIDER -->
+                <div class="card-grid-slider">
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/1.jpg" alt="">
+                                </figure>
+                                <h3>Hanuman Chalisa</h3>
+                            </a>
+                            <p><a href="#">.</a></p>
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/10.jpg" alt="">
+                                </figure>
+                                <h3>O Maahi</h3>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/59.jpg" alt="">
+                                </figure>
+                                <h3>Bhagatt aadmi</h3>
+                            </a>
+                            
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/78.jpg" alt="">
+                                </figure>
+                                <h3>Night Changes</h3>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/25.jpg" alt="">
+                                </figure>
+                                <h3>Har Har Shambhu</h3>
+                            </a>
+                            
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/32.jpg" alt="">
+                                </figure>
+                                <h3>DEKHA EK KHWAB X LAILA MASHUP</h3>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/13.jpg" alt="">
+                                </figure>
+                                <h3>Shri Krishna Govind Hare Murari</h3>
+                            </a>
+                            
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/18.jpg" alt="">
+                                </figure>
+                                <h3>Suniya suniya</h3>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/45.jpg" alt="">
+                                </figure>
+                                <h3>Angaro ka ambar sa</h3>
+                            </a>
+                            
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/50.jpg" alt="">
+                                </figure>
+                                <h3>O Re Piya</h3>
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/66.jpg" alt="">
+                                </figure>
+                                <h3>Lehanga</h3>
+                            </a>
+                            
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/81.jpg" alt="">
+                                </figure>
+                                <h3>Gangsta Paradise</h3>
+                            </a>
+                           
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/80.jpg" alt="">
+                                </figure>
+                                <h3>You and me</h3>
+                            </a>
+                            
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/36.jpg" alt="">
+                                </figure>
+                                <h3>Kesariya</h3>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="card-group-grid">
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/72.jpg" alt="">
+                                </figure>
+                                <h3>Baller</h3>
+                            </a>
+                            
+                        </div>
+                        <div class="card-simple">
+                            <a href="live.html">
+                                <figure>
+                                    <img src="img/91.jpg" alt="">
+                                </figure>
+                                <h3>Expert Jatt</h3>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section-featured-creators" id="featured_creators">
+            
+            </div>
+
+        </section>
+
+            <!-- #SECTION: CATEGORY -->
+            
+                <!-- CATEGORY SLIDER -->
+                
+
+            <!-- #SECTION: POPULAR ARTISTS -->
+            
+                <!-- POPULAR ARTISTS SLIDER -->
+                
+
+            <!-- #SECTION: DOWNLOAD -->
+            
+        </main>
+
+
+<!-- FOOTER -->
+<footer style="background-color:rgb(181, 181, 181);">
+  <div class="footer-grid">
+      <ul>
+          <div>
+              <img src="images/logo/SVG/Audiospark_Logo.png" alt="" width="150px" id="logoFooterModeLight">
+              <img src="images/logo/SVG/Audiospark_Logo_White.png" alt="" width="150px" id="logoFooterModeDark">
+              <p>An unparalleled experience of sound magic, MacroTune<br> By Student of MVA, Adarsh Shukla.<br>Insta: pt.adarshshukla </p>
+              <!-- SOCIAL MEDIA -->
+              
+
+              <!-- FOOTER ICON -->
+              
+          </div>
+      </ul>
+      <ul>
+          <h4>MacroTune</h4>
+          <li><a href="index.html">HOME</a></li>
+          <a href="about.html"><li>ABOUT</li></a>
+      
+  </div>
+
+  <!-- FOOTER COPYRIGHT -->
+  <div class="footer-copyright">
+    <p>© 2023 MacroTune. All rights reserved.<br>By Adarsh Shukla.</p>
+  </div>
+</footer>
+
+
+        <!-- BACK TOP -->
+        <a href="#Top">
+            <div class="back-top" id="backTop">
+                <span class="far fa-angle-up"></span>
+            </div>
+        </a>
+
+
+
+        <!-- IMPORT JS -->
+        <script src="js/app.js"></script>
+    
+    </body>
+</html>

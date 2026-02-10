@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+
+</head>
+<body>
+    <div class="hero">
+<div class="nav">
+    <img src="image/logo.jpg">
+    <div class="menu-right">
+        <span onClick="myFunction()">&#9776;</span>
+        <ul id="menu">
+            <li><a href="index.html" class="a">HOME</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+    <small></small>
+    <br><br><br><br>
+    <h3>ABOUT US</h3>
+     <p>With MACRO TUNE, it’s easy to find the right music or podcast for every moment – on your phone, your computer, your iPad and more.</p>
+    <p>You can also browse through the collections of friends, artists, and celebrities, or create a radio station and just sit back.</p>
+ <br>
+ <h3>MACROTUNE (Music Library)</h3>
+        <p>MACRO TUNE</p>
+       <p> Macro Vision Academy Burhanpur (MP)
+       <p> @mvaburhanpur.com</p> 
+       <p>©2023</p> 
+       <p>Insta: pt.adarshshukla</p> 
+        </p>
+</div>
+
+<script>
+ function myFunction() {
+  var x = document.getElementById('menu');
+  if (x.style.display === 'none') {
+    x.style.display = 'block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+</script>
+</body>
+</html> 
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .hero{
+        width: 100%;
+        height: 100vh;
+        background-image:url(image/background.png);
+        background-size: cover;
+        background-position: center;
+        position:relative;
+        overflow: hidden;
+    }
+    
+    .logo{
+        width: 200px;
+        height: 120px;
+        cursor: pointer;
+    }
+    
+    .navbar{
+        width: 100%;
+        height: 10%;
+        margin: auto;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav{
+        background:#fff;
+        color: black;
+        font-size: 15px;
+        padding: 5px;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .nav img {
+    height: 45px;
+    float: left;
+    margin-right: 20px;
+}
+
+    span{
+        margin: 0 20px;
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+    }
+
+    @media only screen and (max-width:700px){
+        span{
+            display: block;
+        }
+        ul li{
+            display: block;
+        }
+        ul{
+            display: none;
+        }
+    }
+    
+   .menu-right{
+    text-align: right;
+    font-family:'Courier New', Courier, monospace;
+   }
+
+    ul li{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   .a{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+   .a:hover{
+    list-style: none;
+    text-decoration: none;
+    color:#6c5ce7;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+
+    .content{
+        color:#fbfcfd;
+        position: absolute;
+        top: 50%;
+        left: 8%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+    
+    h3{
+        font-size: 60px;
+        margin: 0px 0 30px;
+        line-height: 80px;
+        color: white;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    p{
+font-size:28px;
+margin: 0px 0 30px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;;
+    }
+
+
+    
+    .side-bar{
+        width:50px;
+        height: 100vh;
+        background: linear-gradient(#00545d, #000729);
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .symbol img{
+        width: 100%;
+        animation:bubble 7s linear infinite;
+    }
+    
+    .symbol{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        position: absolute;
+        bottom: -70px;
+    }
+    
+    @keyframes bubble{
+        0%{
+            transform:translateY(0);
+            opacity: 0;
+        }
+    
+        50%{
+    
+            opacity: 1;
+        }
+    
+        70%{
+            
+            opacity: 1;
+        }
+    
+        100%{
+            transform:translateY(80vh);
+            opacity: 0;
+        }
+    }
+    
+    .symbol img:nth-child(1){
+    animation-delay: 2s;
+    width:25px;
+    }
+    
+    .symbol img:nth-child(2){
+    animation-delay: 1s;
+    }
+    
+    .symbol img:nth-child(3){
+        animation-delay: 3s;
+        width:25px;
+    }
+    
+    .symbol img:nth-child(4){
+     animation-delay: 4.5s;
+     width:15px;
+     }
+    
+     .symbol img:nth-child(5){
+        animation-delay:3s;
+        width:28px;
+        }
+        
+        .symbol img:nth-child(6){
+            animation-delay: 6s;
+            width:25px;
+        }
+        
+        .symbol img:nth-child(7){
+         animation-delay: 7s;
+         width: 35px;
+         }
+
+ 
+</style>
