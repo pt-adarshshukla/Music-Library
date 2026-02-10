@@ -1,3 +1,5 @@
+![image alt](https://github.com/pt-adarshshukla/Music-Library/blob/48005d4bb2903023124108fa1e8e060a1fad1d6f/Screenshot.png)
+
 Music Library is a dynamic and functional web-based music player built using HTML, JavaScript, and MP3 files. It provides an organized and interactive music streaming experience within a local network, designed as a lightweight alternative to platforms like Apple Music or Spotify.
 
 
